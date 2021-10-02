@@ -11,14 +11,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        uses: actions/setup-node@v2
+      - uses: actions/setup-node@v2
         with:
           node-version: 14.x
       - run: |
           npm i
           npm run build
       - name: Build Next App for Github Pages
-      - uses: jhasuraj01/next-pages
+        uses: jhasuraj01/next-pages
       - name: Commit and push changes
         run: |
           git config --global user.name "jhasuraj01"
