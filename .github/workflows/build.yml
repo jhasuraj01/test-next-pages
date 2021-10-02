@@ -18,7 +18,7 @@ jobs:
           npm i
           npm run build
       - name: Build Next App for Github Pages
-        uses: jhasuraj01/next-pages
+        uses: jhasuraj01/next-pages@main
       - name: Commit and push changes
         run: |
           git config --global user.name "jhasuraj01"
