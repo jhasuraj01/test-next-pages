@@ -20,15 +20,15 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 14.x
-      - run: |
-          npm i
-          npm run build
+      # - run: |
+      #     npm i
+      #     npm run build
       - name: Build Next App for Github Pages
         uses: jhasuraj01/next-pages@main
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "jhasuraj01"
-          git config --global user.email "44930179+jhasuraj01@users.noreply.github.com"
-          git add -A
-          git commit -m "New Build"
-          git push
+      # - name: Commit and push changes
+      #   run: |
+      #     git config --global user.name "jhasuraj01"
+      #     git config --global user.email "44930179+jhasuraj01@users.noreply.github.com"
+      #     git add -A
+      #     git commit -m "New Build"
+      #     git push
